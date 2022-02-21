@@ -33,5 +33,10 @@
     "name": "آهنگ تناسخ تتلو",
     "image": "https://ingoogle.ir/wp-content/uploads/2021/07/Amir-Tataloo-Tanasokh.jpg",
     "sound": "https://dl.ingoogle.ir/tataloo/AmirTataloo-Tanasokh.mp3?_=1"
+  },
+  {
+    "name": "آهنگ حرمسرا تتلو",
+    "image": "https://ingoogle.ir/wp-content/uploads/2020/05/Amir-Tataloo-Haramsara.jpg",
+    "sound": "https://dl.ingoogle.ir/tataloo/AmirTataloo-Haramsara.128.mp3?_=2"
   }
 ]
