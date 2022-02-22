@@ -11,7 +11,7 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.MusicPlayerTataloo">
         <activity
-            android:name=".MainActivity"
+            android:name=".PlayerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
