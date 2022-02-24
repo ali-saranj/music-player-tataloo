@@ -22,18 +22,19 @@ class PlayerActivity : AppCompatActivity() {
     lateinit var music_controler: SeekBar
     var progres = 0
     var darecshen = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
         findID()
 
-        Picasso.get().load("https://ingoogle.ir/wp-content/uploads/2021/11/Amir-Tataloo-Gedaei.jpg").into(image_music)
+        Picasso.get().load(MainActivity.musics[2].image).into(image_music)
+        tv_name_music.text = MainActivity.musics[2].name
 
         mediaPlayer = MediaPlayer()
-        mediaPlayer.setDataSource(this, Uri.parse("https://dl.ingoogle.ir/tataloo/1/Amir%20Tataloo%20-%20Gedaei%20128.mp3?_=1"))
+        mediaPlayer.setDataSource(this, Uri.parse(MainActivity.musics[2].sound))
         mediaPlayer.prepare()
+
         darecshen = mediaPlayer.duration.toInt()
         tv_derecshen.text = "${(darecshen/60000)} : ${(darecshen/600)%100}"
         music_controler.max = darecshen

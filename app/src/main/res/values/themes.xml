@@ -3,8 +3,9 @@
     <style name="Theme.MusicPlayerTataloo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">#191C1E</item>
+        <item name="colorPrimaryVariant">#000000</item>
         <item name="colorOnPrimary">#191C1E</item>
+        <item name="android:windowBackground">#191C1E</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#EBFFFFFF</item>
         <item name="colorSecondaryVariant">@color/purple_700</item>
