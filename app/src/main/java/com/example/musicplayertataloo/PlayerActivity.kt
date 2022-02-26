@@ -22,17 +22,20 @@ class PlayerActivity : AppCompatActivity() {
     lateinit var music_controler: SeekBar
     var progres = 0
     var darecshen = 0
+    var position = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
         findID()
 
-        Picasso.get().load(MainActivity.musics[2].image).into(image_music)
-        tv_name_music.text = MainActivity.musics[2].name
+       position = intent.getIntExtra("position",-1)
+
+        Picasso.get().load(MainActivity.musics[position].image).into(image_music)
+        tv_name_music.text = MainActivity.musics[position].name
 
         mediaPlayer = MediaPlayer()
-        mediaPlayer.setDataSource(this, Uri.parse(MainActivity.musics[2].sound))
+        mediaPlayer.setDataSource(this, Uri.parse(MainActivity.musics[position].sound))
         mediaPlayer.prepare()
 
         darecshen = mediaPlayer.duration.toInt()

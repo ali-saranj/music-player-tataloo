@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 val jsonArray = JSONArray(response)
                 for (a in 0 until jsonArray.length()){
                     musics.add(Music(jsonArray.getJSONObject(a).getString("name"),jsonArray.getJSONObject(a).getString("image"),jsonArray.getJSONObject(a).getString("sound")))
-                    startActivity(Intent(this,PlayerActivity::class.java))
+                    startActivity(Intent(this,MenuActivity::class.java))
                     finish()
                 }
             },
