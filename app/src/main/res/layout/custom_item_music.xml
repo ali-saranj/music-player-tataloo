@@ -16,21 +16,18 @@
         android:layout_margin="8dp"
         android:text="test"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:elevation="12dp"
-        android:innerRadius="0dp"
-        android:shape="ring"
-        android:thicknessRatio="1.9"
-        app:cardCornerRadius="30dp">
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="20dp">
 
         <ImageView
             android:id="@+id/image_item"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_launcher_background"/>

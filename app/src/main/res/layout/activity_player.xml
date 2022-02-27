@@ -23,7 +23,7 @@
     <ImageView
         android:id="@+id/image_music"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
@@ -92,6 +92,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_play_pause"
         app:layout_constraintRight_toLeftOf="@id/btn_play_pause"
         app:layout_constraintTop_toTopOf="@+id/btn_play_pause" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_view_play_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_play_pause"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

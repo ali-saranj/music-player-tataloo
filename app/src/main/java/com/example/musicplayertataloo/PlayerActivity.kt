@@ -7,6 +7,8 @@ import android.view.animation.AnimationUtils
 import android.widget.*
 import android.widget.SeekBar.OnSeekBarChangeListener
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 class PlayerActivity : AppCompatActivity() {
@@ -18,6 +20,7 @@ class PlayerActivity : AppCompatActivity() {
     lateinit var btn_befor: ImageView
     lateinit var tv_name_music: TextView
     lateinit var tv_derecshen: TextView
+    lateinit var listview: RecyclerView
     lateinit var tv_progres: TextView
     lateinit var music_controler: SeekBar
     var progres = 0
@@ -28,6 +31,9 @@ class PlayerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_player)
 
         findID()
+
+        listview.layoutManager = LinearLayoutManager(this)
+        listview.adapter = CustomAdapter(this,MainActivity.musics)
 
        position = intent.getIntExtra("position",-1)
 
@@ -105,6 +111,7 @@ class PlayerActivity : AppCompatActivity() {
         tv_derecshen = findViewById(R.id.tv_drecshen)
         tv_progres = findViewById(R.id.tv_progres)
         image_music = findViewById(R.id.image_music)
+        listview = findViewById(R.id.list_view_play_activity)
     }
 }
 
