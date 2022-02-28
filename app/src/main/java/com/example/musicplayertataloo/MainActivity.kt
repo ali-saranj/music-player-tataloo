@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         musics = ArrayList()
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://raw.githubusercontent.com/ali-saranj/music-player-tataloo/master/README.md"
+        val url = "https://raw.githubusercontent.com/ali-saranj/music-player-tataloo/master/Description"
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             { response ->
